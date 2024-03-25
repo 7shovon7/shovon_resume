@@ -98,7 +98,7 @@ class ResumePage extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyLarge!,
             ),
             // Experience Bar
-            const ResumeSectionHeader(text: 'Experience'),
+            const ResumeSectionHeader(text: 'Experiences'),
             // Experience List
             ListView.builder(
               shrinkWrap: true,
