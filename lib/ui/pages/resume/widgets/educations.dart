@@ -10,6 +10,7 @@ class ResumeEducations extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: Shovon.educations.length,
       itemBuilder: (context, index) {
         final selectedEdu = Shovon.educations[index];
@@ -42,6 +43,7 @@ class ResumeEducations extends StatelessWidget {
               ),
               ListView.separated(
                 shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: selectedEdu.specialAchievements.length,
                 separatorBuilder: (context, index) => const SizedBox(
                   height: UiConstants.generalVerticalContentPadding / 3.0,

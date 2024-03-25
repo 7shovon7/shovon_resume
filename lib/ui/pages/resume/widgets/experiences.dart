@@ -59,6 +59,7 @@ class ResumeExperiences extends StatelessWidget {
               ),
               ListView.separated(
                 shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: selectedExp.responsibilities.length,
                 separatorBuilder: (context, index) => const SizedBox(
                   height: UiConstants.generalVerticalContentPadding / 3.0,

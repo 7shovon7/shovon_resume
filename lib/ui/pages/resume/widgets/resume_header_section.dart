@@ -23,6 +23,7 @@ class ResumeHeaderSection extends StatelessWidget {
       children: [
         Text(
           Shovon.fullName,
+          textAlign: TextAlign.center,
           style: Theme.of(context)
               .textTheme
               .headlineLarge!
@@ -30,6 +31,7 @@ class ResumeHeaderSection extends StatelessWidget {
         ),
         Text(
           Shovon.title,
+          textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic,
