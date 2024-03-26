@@ -6,10 +6,12 @@ class ResumeContactsItem extends StatelessWidget {
     super.key,
     required this.icon,
     required this.text,
+    // this.shouldBreak,
   });
 
   final IconData icon;
   final String text;
+  // final bool? shouldBreak;
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +27,11 @@ class ResumeContactsItem extends StatelessWidget {
         const SizedBox(
           width: UiConstants.generalHorizontalContentPadding / 2.5,
         ),
-        Text(
-          text,
-          style: Theme.of(context).textTheme.titleMedium,
+        Flexible(
+          child: Text(
+            text,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
         ),
       ],
     );

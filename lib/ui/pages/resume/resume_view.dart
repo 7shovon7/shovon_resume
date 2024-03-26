@@ -16,7 +16,8 @@ class ResumePage extends StatelessWidget {
   Widget build(BuildContext context) {
     double deviceWidth = context.width;
     double maxWidth = 860;
-    double breakingWidth = 650;
+    double breakingWidth = 700;
+    // bool shouldBreak = deviceWidth < breakingWidth;
 
     double contentWidth = deviceWidth > maxWidth ? maxWidth : deviceWidth;
     return Scaffold(
@@ -65,7 +66,10 @@ class ResumePage extends StatelessWidget {
                     ),
                     // Education
                     const ResumeSectionHeader(text: 'Education'),
-                    const ResumeEducations(),
+                    ResumeEducations(
+                      width: contentWidth,
+                      breakingWidth: breakingWidth,
+                    ),
                   ],
                 ),
               ),
