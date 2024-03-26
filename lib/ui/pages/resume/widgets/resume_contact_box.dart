@@ -18,14 +18,17 @@ class ResumeContactBox extends StatelessWidget {
       ResumeContactsItem(
         text: '/ ${ShovonSocial.linkedinUser}',
         icon: FontAwesomeIcons.linkedin,
+        url: ShovonSocial.linkedinUrl,
       ),
       ResumeContactsItem(
         text: '/ ${ShovonSocial.githubUser}',
         icon: FontAwesomeIcons.github,
+        url: ShovonSocial.githubUrl,
       ),
       ResumeContactsItem(
         text: '/ ${ShovonSocial.stackoverflowUser}',
         icon: FontAwesomeIcons.stackOverflow,
+        url: ShovonSocial.stackoverflowUrl,
       ),
     ];
     return Container(
