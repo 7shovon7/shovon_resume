@@ -22,6 +22,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
 
@@ -29,3 +30,12 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/logo/
+
+flutter_launcher_icons:
+  # image_path: "assets/icon/icon.png"
+  web:
+    generate: true
+    image_path: "assets/logo/s_logo.jpeg"
+    background_color: "#FFFFFF"
+    theme_color: "#694B08"
